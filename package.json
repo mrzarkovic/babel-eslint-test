@@ -5,7 +5,9 @@
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build": "babel js/src -d js/lib | eslint ./js/src/index.js"
+    "dev": "concurrently \"npm run linter\" \"npm run build-babel\"",
+    "build-babel": "babel js/src --watch --out-dir js/lib",
+    "linter": "esw --watch ./js/src/index.js"
   },
   "repository": {
     "type": "git",
@@ -24,9 +26,10 @@
   "homepage": "https://github.com/mrzarkovic/babel-eslint-test#readme",
   "devDependencies": {
     "babel-cli": "^6.23.0",
-    "babel-eslint": "^6.1.2",
     "babel-preset-env": "^1.1.10",
-    "eslint": "^3.16.1"
+    "concurrently": "^3.3.0",
+    "eslint": "^3.16.1",
+    "eslint-watch": "^3.0.0"
   },
   "browserslist": []
 }

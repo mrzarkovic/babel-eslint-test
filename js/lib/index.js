@@ -4,23 +4,39 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var Circle = function () {
+	function Circle(radius) {
+		_classCallCheck(this, Circle);
+
+		this.radius = radius;
+	}
+
+	_createClass(Circle, [{
+		key: "hello",
+		value: function hello() {}
+	}]);
+
+	return Circle;
+}();
+
 var Rectangle = function () {
-  function Rectangle(height, width) {
-    _classCallCheck(this, Rectangle);
+	function Rectangle(height, width) {
+		_classCallCheck(this, Rectangle);
 
-    this.height = height;
-    this.width = width;
-  }
+		this.height = height;
+		this.width = width;
+	}
 
-  _createClass(Rectangle, [{
-    key: "hello",
-    value: function hello() {
-      console.log("hi!");
-    }
-  }]);
+	_createClass(Rectangle, [{
+		key: "hello",
+		value: function hello() {}
+	}]);
 
-  return Rectangle;
+	return Rectangle;
 }();
 
 var rect = new Rectangle(100, 200);
 rect.hello();
+
+var circle = new Circle(100, 200);
+circle.hello();
