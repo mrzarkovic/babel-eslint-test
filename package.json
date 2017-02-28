@@ -1,0 +1,24 @@
+{
+  "name": "babel-eslint-test",
+  "version": "1.0.0",
+  "description": "Testing Babel ESLint integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrzarkovic/babel-eslint-test.git"
+  },
+  "keywords": [
+    "babel",
+    "eslint",
+    "integration"
+  ],
+  "author": "Milos Zarkovic <mzarkovicm@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrzarkovic/babel-eslint-test/issues"
+  },
+  "homepage": "https://github.com/mrzarkovic/babel-eslint-test#readme"
+}
