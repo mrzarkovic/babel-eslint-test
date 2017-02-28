@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/mrzarkovic/babel-eslint-test/issues"
   },
-  "homepage": "https://github.com/mrzarkovic/babel-eslint-test#readme"
+  "homepage": "https://github.com/mrzarkovic/babel-eslint-test#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.16.1"
+  }
 }
