@@ -1,0 +1,12 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  },
+  "rules": {
+    "strict": ["error", "global"],
+	"quotes": ["error", "single"],
+	"no-use-before-define": ["error", { "variables": true, "functions": true, "classes": true }]
+  }
+}

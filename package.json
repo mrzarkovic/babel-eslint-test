@@ -2,9 +2,10 @@
   "name": "babel-eslint-test",
   "version": "1.0.0",
   "description": "Testing Babel ESLint integration",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"build": "babel js/src -d js/lib | eslint ./js/src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,10 @@
   },
   "homepage": "https://github.com/mrzarkovic/babel-eslint-test#readme",
   "devDependencies": {
+    "babel-cli": "^6.23.0",
     "babel-eslint": "^6.1.2",
+    "babel-preset-env": "^1.1.10",
     "eslint": "^3.16.1"
-  }
+  },
+  "browserslist": []
 }
