@@ -4,7 +4,11 @@
     "sourceType": "module",
     "allowImportExportEverywhere": false
   },
+  "env": {
+    "browser": true
+  },
   "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }],
     "strict": ["error", "global"],
 	"quotes": ["error", "single"],
 	"no-use-before-define": ["error", { "variables": true, "functions": true, "classes": true }]
