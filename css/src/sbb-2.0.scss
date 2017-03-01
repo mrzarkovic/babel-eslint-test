@@ -1,0 +1,374 @@
+@import 'normalize';
+
+$primary-color: #ed5288;
+$primary-color-darker: #DA4E78;
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.sbb {
+
+  * {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+
+  &.container {
+    width: 100%;
+    min-height: 100%;
+    background: #f2f2f2;
+  }
+
+  .content-wrapper {
+    width: 70%;
+    margin: 0 auto;
+
+    .post-submit-message-holder {
+      margin-top: 100px;
+      background: #fff;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .post-submit-info-holder {
+      text-align: center;
+      color: #333333;
+      margin-top: 30px;
+      padding-bottom: 60px;
+      line-height: 1.5em;
+      font-size: 14px;
+
+      & > .lead-id {
+        color: $primary-color;
+      }
+    }
+
+    .narrow-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 15px 0;
+
+      &.footer {
+        color: #999;
+        font-size: 14px;
+        line-height: 28px;
+      }
+
+      & > h1 {
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 30px;
+
+        & > span {
+          display: inline-block;
+          border: 1px solid #000;
+          border-radius: 50%;
+          width: 26px;
+          height: 26px;
+          padding: 1px 0;
+          text-align: center;
+          margin-right: 8px;
+        }
+      }
+
+      label {
+        display: block;
+        font-size: 14px;
+        line-height: 38px;
+        color: #999999;
+      }
+
+      input[type="text"],
+      input[type="tel"] {
+        padding: 15px 8px;
+        width: 100%;
+        border: 1px solid #fff;
+
+        &:focus {
+          border: 1px solid #ccc;
+        }
+      }
+
+      .validation-error {
+        input[type="text"],
+        input[type="tel"] {
+          border-color: $primary-color;
+        }
+      }
+
+      .action-button {
+        display: block;
+        margin: 0 auto;
+        background: $primary-color;
+        color: #fff;
+        border: 0;
+        padding: 15px 60px;
+        font-size: 18px;
+
+        &:hover {
+          cursor: pointer;
+          background: $primary-color-darker;
+        }
+      }
+    }
+  }
+
+  .sbb-nav {
+    height: 90px;
+    background: #000;
+
+    .content-wrapper {
+      height: 100%;
+
+      .row {
+        height: 100%;
+      }
+    }
+  }
+
+  .hero-image {
+    height: 552px;
+    background-size: cover;
+    margin-bottom: 60px;
+
+    &.trio {
+      background: #000 url('/images/sbb/2.0/lp1-hero-image.jpg') center no-repeat;
+
+      .featured-text,
+      .sub-text {
+        color: #fff;
+      }
+
+      .featured-boxes {
+        max-width: 530px;
+      }
+    }
+
+    &.duo {
+      background: #fffcf6 url('/images/sbb/2.0/lp2-hero-image-gold-dust.jpg') center bottom no-repeat;
+
+      .featured-text,
+      .sub-text {
+        color: #000;
+      }
+
+      .featured-boxes {
+        max-width: 390px;
+
+        img {
+          &.pull-left {
+            margin-left: -25px;
+          }
+          &.pull-right {
+            margin-right: -25px;
+          }
+        }
+      }
+    }
+
+    &.sk {
+      background: #fff url('/images/sbb/2.0/lp3-hero-image.jpg') center no-repeat;
+
+      .featured-text,
+      .sub-text {
+        color: #fff;
+      }
+
+      .featured-boxes {
+        max-width: 390px;
+
+        img {
+          &.pull-left {
+            margin-left: -25px;
+          }
+          &.pull-right {
+            margin-right: -25px;
+          }
+        }
+      }
+
+      .logo-holder {
+        padding-top: 30px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .logo-holder {
+      padding-top: 79px;
+      margin-bottom: 26px;
+
+      & img {
+        max-width: 100%;
+      }
+    }
+
+    .featured-text {
+      font-weight: bold;
+      font-size: 1.9rem;
+    }
+
+    .sub-text {
+      font-weight: bold;
+      font-size: .8rem;
+      margin-top: 10px;
+      font-family: 'Montserrat', sans-serif !important;
+    }
+
+    .scroll-to-form {
+      height: 90px;
+
+      &.black {
+        background: transparent url('/images/sbb/2.0/down-arrow-black.png') center no-repeat;
+      }
+
+      &.white {
+        background: transparent url('/images/sbb/2.0/down-arrow-white.png') center no-repeat;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .featured-boxes {
+      white-space: nowrap;
+
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.padding-right {
+  padding-right: 20px;
+}
+.padding-left {
+  padding-left: 20px;
+}
+textarea, input, button {
+  outline: none;
+}
+
+@media all and (max-width: 699px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .col-m-1-1 {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .sbb {
+
+    .sbb-nav {
+      height: 60px;
+      padding: 10px 0;
+
+      img {
+        width: 40px;
+        display: block;
+      }
+
+      .align-right {
+        img {
+          float: right;
+        }
+      }
+    }
+
+    .hero-image {
+      margin-bottom: 50px;
+
+      &.duo {
+        background-size: contain;
+      }
+
+      .logo-holder {
+        padding-top: 30px;
+        margin-bottom: 10px;
+
+        img {
+          max-width: 10rem;
+        }
+      }
+    }
+
+    .hero-image {
+      height: 290px;
+
+      &.trio {
+        .featured-boxes {
+          max-width: 280px;
+          margin-top: 2.2rem;
+        }
+      }
+
+      &.duo {
+        .featured-boxes {
+          max-width: 280px;
+          margin-top: 2.2rem;
+
+          img {
+            &.pull-left {
+              margin-left: -10px;
+            }
+            &.pull-right {
+              margin-right: -10px;
+            }
+          }
+        }
+      }
+
+      &.sk {
+        .logo-holder {
+          padding-top: 10px;
+        }
+        .featured-boxes {
+          max-width: 240px;
+          margin-top: 10px;
+        }
+      }
+
+      .featured-text {
+        font-size: 1.2rem;
+      }
+
+      .sub-text {
+        margin-top: 5px;
+        font-weight: normal;
+      }
+    }
+    .content-wrapper {
+      width: 90%;
+
+      section {
+        & > h1 {
+          span {
+            display: block;
+            margin: 0 auto 10px;
+          }
+        }
+      }
+    }
+  }
+}
