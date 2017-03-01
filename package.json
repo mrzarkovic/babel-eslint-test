@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run linter\" \"npm run build-babel\"",
     "build-babel": "babel js/src --watch --out-dir js/lib",
-    "linter": "esw --watch ./js/src/*.js"
+    "linter": "esw --watch ./js/src/*.js",
+    "sass": "node-sass --watch css/src --output css/lib"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,8 @@
     "babel-preset-env": "^1.1.10",
     "concurrently": "^3.3.0",
     "eslint": "^3.16.1",
-    "eslint-watch": "^3.0.0"
+    "eslint-watch": "^3.0.0",
+    "node-sass": "^4.5.0"
   },
   "browserslist": []
 }
