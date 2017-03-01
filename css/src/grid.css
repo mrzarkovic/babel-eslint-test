@@ -1,0 +1,282 @@
+/* Grid styles */
+
+.table {
+	position: 		relative;
+	border-collapse: separate;
+	border-spacing: 0px;
+}
+
+.row {
+	display: 			table;
+	width: 				100%;
+	position: 		relative;
+	margin: 			0;
+}
+
+.vertical-padding {
+	padding-top: 		5px;
+	padding-bottom: 	5px;
+}
+
+.vertical-padding.vertical-padding-more-top {
+	padding-top: 15px;
+}
+
+.vertical-padding.vertical-padding-more-bottom {
+	padding-bottom: 15px;
+}
+
+.padding-right {
+	padding-right: 		5px;
+}
+
+.table.with-border .row {
+	border: 			1px solid #E6E6E6;
+	border-radius: 		0;
+	border-top: 		0;
+}
+
+.row:after {
+	content:		"";
+	display:		table;
+	clear:			both;
+}
+
+.row,
+.row > *,
+.row *:after,
+.row *:before {
+	-webkit-box-sizing:		border-box;
+	-moz-box-sizing:		border-box;
+	box-sizing:				border-box;
+}
+
+.table.with-border .row:last-child {
+	border-top: 					0px;
+	border-bottom-left-radius: 		3px;
+	border-bottom-right-radius: 	3px;
+}
+
+.table.with-border .row:first-child {
+	border-top: 				1px solid #EFEFEF;/* #E6E6E6*/
+	border-top-left-radius: 	3px;
+	border-top-right-radius: 	3px;
+}
+
+.row.no-border {
+	border: 0px!important;
+}
+
+.row.no-border-bottom {
+	border-bottom: 0px!important;
+}
+
+[class*='col-'] {
+	display: 	table-cell;
+	vertical-align: middle;
+}
+
+.vertical-top {
+	vertical-align: top;
+}
+
+.vertical-middle {
+	vertical-align: middle;
+}
+.icon-holder {
+	padding: 		14px 24px;
+}
+
+.with-icon .desc {
+	padding: 		15px 0 0 0;
+}
+
+.desc p {
+	margin: 		0;
+}
+
+.title {
+	font-size: 		16px;
+}
+
+.with-icon .title {
+	line-heigh1t: 	70px;
+	margin: 5px 0px;
+}
+
+.align-center {
+	text-align: 	center;
+}
+
+.align-right {
+	text-align: 	right;
+}
+
+.align-left {
+	text-align: 	left;
+}
+
+.with-icon > .align-center {
+	line-height: 	65px;
+}
+
+.radio-tile {
+	display: 		table-cell;
+	vertical-align: middle;
+	text-align: 	center;
+	height: 		66px;
+	width: 			170px;
+}
+
+.radio-tile > * {
+	vertical-align: 	middle;
+}
+
+.radio-tile > input {
+	vertical-align: 	sub;
+}
+
+.space {
+	text-indent: 	-9999px;
+}
+
+.label {
+	text-align: 	right;
+	padding: 		5px 10px 5px 0;
+	font-weight: 	bold;
+}
+
+.label-two-lines {
+	padding-top: 	5px;
+}
+
+label.with-icon {
+	min-height: 70px;
+}
+
+.no-label {
+	padding: 		0 5px;
+}
+
+.no-icon {
+	padding: 		10px 0 10px 20px;
+}
+
+.col-fix-40 {
+	width: 40px;
+}
+
+.col-greedy {
+	width: 100%;
+}
+
+.col-compact {
+	width: 1px;
+	white-space: nowrap;
+}
+.col-1-3, .col-2-6 {
+	width:		33.33%;
+}
+
+.col-2-3 {
+	width:		66.66%;
+}
+
+.col-1-12 {
+	width:		8.33%;
+}
+
+.col-1-6 {
+	width:		16.66%;
+}
+
+.col-5-6 {
+	width:		83.34%;
+}
+
+.col-1-4 {
+	width:		25%;
+}
+
+.col-1-9 {
+	width:		11.11%;
+}
+
+.col-2-9 {
+	width:		22.22%;
+}
+
+.col-4-9 {
+	width:		44.44%;
+}
+
+.col-5-9 {
+	width:		55.55%;
+}
+
+.col-7-9 {
+	width:		77.77%;
+}
+
+.col-1-8 {
+	width:		12.5%;
+}
+
+.col-1-6 {
+	width:		16.66%;
+}
+
+.col-4-5 {
+	width: 		80%;
+}
+
+.col-1-5 {
+	width: 		20%;
+}
+
+.col-1-4 {
+	width:		25%;
+}
+
+.col-3-4 {
+	width:		75%;
+}
+.col-1-3 {
+	width:		33.33%;
+}
+.col-1-2 {
+	width:		50%;
+}
+.col-1 {
+	width:		100%;
+}
+
+/* general decorators */
+
+.cell {
+	display: table-cell!important;
+}
+
+.inline-block {
+	display: inline-block !important;
+}
+
+.with-padding {
+	padding: 5px!important;
+}
+
+.no-padding {
+	padding: 0px!important;
+}
+
+.space-after {
+	margin-right: 5px!important;
+}
+
+.cell.space-after {
+	padding-right: 5px!important;
+}
+
+
+
+/* end of grid styles */

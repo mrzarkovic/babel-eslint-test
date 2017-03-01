@@ -46,8 +46,8 @@ var KPSBB = Class.create({ // eslint-disable-line no-unused-vars
 	formSubmitHandler: function(evt) {
 		evt.preventDefault();
 
-		var formData = this.form.serialize(true);
-		var formErros = this.checkFormData(formData);
+		let formData = this.form.serialize(true);
+		let formErros = this.checkFormData(formData);
 
 		if (formErros.length == 0) {
 			// Send data
