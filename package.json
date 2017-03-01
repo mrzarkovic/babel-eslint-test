@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run linter\" \"npm run build-babel\"",
     "build-babel": "babel js/src --watch --out-dir js/lib",
-    "linter": "esw --watch ./js/src/*.js",
+    "linter": "esw --watch --ext=.es6 ./js/src/**",
     "sass": "node-sass --watch css/src --output css/lib"
   },
   "repository": {

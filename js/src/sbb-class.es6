@@ -29,16 +29,22 @@ var KPSBB = Class.create({ // eslint-disable-line no-unused-vars
 		this.form.observe('submit', this.formSubmitHandler.bind(this));
 
 		// Live input validation
-		this.form.select('input').each(function(el) {
-			el.observe('change', function() {
-				var elName = el.readAttribute('name');
-				if (el.value != '') {
-					if (elName == 'data[phone]') {
-						el.value = el.value.replaceAll(/[^0-9]/, '');
-					}
-					el.up('[action-name="validate"]').removeClassName('validation-error');
+		this.form.select('input').each((el) => {
+			el.observe('change', () => {
+				let formFieldName = el.readAttribute('name');
+
+				if (formFieldName == 'data[phone]') {
+					el.value = el.value.replaceAll(/[^0-9]/, '');
+				}
+
+				let formFieldValue = el.value;
+				let formData = {};
+				formData[formFieldName] = formFieldValue;
+
+				if (this.formDataErrors(formData).length) {
+					this.showFormErrors(formFieldName);
 				} else {
-					el.up('[action-name="validate"]').addClassName('validation-error');
+					this.removeFormErrors(formFieldName);
 				}
 			});
 		});
@@ -47,29 +53,29 @@ var KPSBB = Class.create({ // eslint-disable-line no-unused-vars
 		evt.preventDefault();
 
 		let formData = this.form.serialize(true);
-		let formErros = this.checkFormData(formData);
+		let formErros = this.formDataErrors(formData);
 
-		if (formErros.length == 0) {
+		if (!formErros.length) {
 			// Send data
 			this.form.disable();
 			formData['action'] = 'ajax_cable_post';
-			var url = 'sbb.php';
+			let url = 'sbb.php';
 			new Ajax.Request('/' + url, {
 				parameters: formData,
 				onComplete: function (transport) {
-					var json = transport.responseText.evalJSON(true);
+					let json = transport.responseText.evalJSON(true);
 					if (json['success']) {
 						this.formSection.hide();
 						this.postSubmitSection.show();
 						this.postSubmitSection.select('[action-name="lead-id"]')[0].innerHTML = json['lead_id'];
 						this.postSubmitSection.select('[action-name="user-message-holder"]')[0].innerHTML = json['message_to_user'];
 					} else {
-						var postFormErrors = [];
-						for (var error in json['errors']) {
-							var fieldName = 'data[' + error + ']';
-							postFormErrors.push(fieldName);
+						let serverSideErrors = [];
+						for (let error in json['errors']) {
+							let fieldName = 'data[' + error + ']';
+							serverSideErrors.push(fieldName);
 						}
-						this.showFormErrors(postFormErrors);
+						this.showFormErrors(serverSideErrors);
 						this.form.enable();
 					}
 				}.bind(this)
@@ -78,25 +84,30 @@ var KPSBB = Class.create({ // eslint-disable-line no-unused-vars
 			this.showFormErrors(formErros);
 		}
 	},
-	checkFormData: function(formData) {
-		var possibleErrors = ['data[first_name]', 'data[phone]'];
-		var errors = [];
+	formDataErrors: function(formData) {
+		let validateFields = ['data[first_name]', 'data[phone]'];
+		let errors = [];
 
-		for (var i = 0; i < possibleErrors.length; i++) {
-			var field = possibleErrors[i];
-			if (typeof formData[field] != 'undefined' && formData[field] == '') {
-				errors.push(field);
+		for (let validateField of validateFields) {
+			if (typeof formData[validateField] !== 'undefined' && formData[validateField] == '') {
+				errors.push(validateField);
 			}
 		}
 
 		return errors;
 	},
-	showFormErrors: function(formErrors) {
+	showFormErrors: function(formFields) {
 		this.form.select('[action-name="validate"]').each(function(el) {
-			var fieldName = el.readAttribute('action-value');
-			if (formErrors.indexOf(fieldName) !== -1) {
+			let fieldName = el.readAttribute('action-value');
+			if (formFields.indexOf(fieldName) !== -1) {
 				el.addClassName('validation-error');
-			} else {
+			}
+		});
+	},
+	removeFormErrors: function(formFields) {
+		this.form.select('[action-name="validate"]').each(function(el) {
+			let fieldName = el.readAttribute('action-value');
+			if (formFields.indexOf(fieldName) !== -1) {
 				el.removeClassName('validation-error');
 			}
 		});
@@ -106,3 +117,16 @@ var KPSBB = Class.create({ // eslint-disable-line no-unused-vars
 String.prototype.replaceAll = function(target, replacement) {
 	return this.split(target).join(replacement);
 };
+
+class Rectangle {
+	constructor(height, width) {
+		this.height = height;
+		this.width = width;
+	}
+
+	hello() {
+	}
+}
+
+let rect = new Rectangle(100, 200);
+rect.hello();

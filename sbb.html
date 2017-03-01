@@ -58,19 +58,21 @@
 		</div>
 		<div class="content-wrapper" id="formSection">
 			<form id="sbbForm" action="" method="post">
+				<input type="hidden" name="product" value="cable">
+				<input type="hidden" name="data[service]" value="duo">
 				<section class="narrow-content">
 					<h1><span>1</span>Unesite ime i broj telefona:</h1>
 					<div class="row">
 						<div class="col-1-2 col-m-1-1 padding-right">
-							<div class="form-field" action-name="validate" action-value="name">
+							<div class="form-field" action-name="validate" action-value="data[first_name]">
 								<label for="name">Ime</label>
-								<input type="text" name="name" id="name">
+								<input type="text" name="data[first_name]" id="name">
 							</div>
 						</div>
 						<div class="col-1-2 col-m-1-1 padding-left">
-							<div class="form-field" action-name="validate" action-value="phoneNumber">
+							<div class="form-field" action-name="validate" action-value="data[phone]">
 								<label for="phone-number">Broj telefona</label>
-								<input type="tel" name="phoneNumber" id="phone-number">
+								<input type="tel" name="data[phone]" id="phone-number">
 							</div>
 						</div>
 					</div>
@@ -89,11 +91,11 @@
 			</section>
 		</div>
 		<div class="content-wrapper" id="postSubmitSection" style="display: none;">
-			<div class="post-submit-message-holder">
-				Hvala! SBB agent će Vas pozvati u roku od 15 minuta.
+			<div class="post-submit-message-holder" action-name="user-message-holder">
+				Hvala!
 			</div>
 			<div class="post-submit-info-holder">
-				Br. vaše prijave je: <span class="inquiry-no">XXXX</span><br>
+				Br. vaše prijave je: <span class="lead-id" action-name="lead-id">XXXX</span><br>
 				Sačuvajte ovaj broj u slučaju da ne dobijete poziv od SBB agenta.
 			</div>
 		</div>
