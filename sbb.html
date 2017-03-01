@@ -3,10 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SBB Duo</title>
-	<meta property="fb:admins" content="715582091" />
-	<meta property="fb:admins" content="1654386082" />
-	<meta property="fb:admins" content="689593954" />
-	<meta property="fb:app_id" content="788364421309531" />
 
 	<meta property="og:url" content="" />
 	<meta property="og:type" content="website" />
@@ -18,110 +14,106 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/lib/sbb-2.0.css" rel="stylesheet" type="text/css">
+	<link href="css/src/grid.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<script src="/scripts/prototype.js"></script>
-	<script src="/js/lib/sbb-class.js"></script>
 </head>
 <body class="pt-sans">
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-3494319-1']);
-	_gaq.push(['_setDomainName', 'kupujemprodajem.com']);
-	_gaq.push(['_trackPageview']);
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-</script>
-
-<div class="container sbb">
-	<div class="sbb-nav">
-		<div class="content-wrapper">
-			<div class="row">
-				<div class="col-1-2"><img src="/images/sbb/2.0/sbb-logo-white.png"></div>
-				<div class="col-1-2 align-right"><img src="/images/sbb/2.0/kp-monogram-white.png"></div>
-			</div>
-		</div>
-	</div>
-	<div class="hero-image duo">
-		<div class="content-wrapper align-center">
-			<div class="logo-holder">
-				<img src="/images/sbb/2.0/kupujemprodajem-logo-color.png">
-			</div>
-			<div class="featured-text narrow-content">
-				Vam poklanja min. 14.490 din<br>
-				uz SBB Duo pakete!*
-			</div>
-			<div class="sub-text">
-				* čak 5 meseci po 1 dinar
-			</div>
-			<div class="scroll-to-form black desktop-only" id="scrollToForm"></div>
-			<div class="featured-boxes narrow-content">
+	<div class="container sbb">
+		<div class="sbb-nav">
+			<div class="content-wrapper">
 				<div class="row">
-					<div class="col-1-3">
-						<img src="/images/sbb/2.0/duo-gold-box.png" class="pull-right">
-					</div>
-					<div class="col-1-3">
-						<img src="/images/sbb/2.0/duo-gold-extra-box.png">
-					</div>
-					<div class="col-1-3">
-						<img src="/images/sbb/2.0/duo-gold-premium-box.png" class="pull-left">
-					</div>
+					<div class="col-1-2"><img src="/assets/img/sbb/sbb-logo-white.png"></div>
+					<div class="col-1-2 align-right"><img src="/assets/img/sbb/kp-monogram-white.png"></div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="content-wrapper" id="formSection">
-		<form id="sbbForm" action="" method="post">
-			<section class="narrow-content">
-				<h1><span>1</span>Unesite ime i broj telefona:</h1>
-				<div class="row">
-					<div class="col-1-2 col-m-1-1 padding-right">
-						<div class="form-field" action-name="validate" action-value="name">
-							<label for="name">Ime</label>
-							<input type="text" name="name" id="name">
+		<div class="hero-image duo">
+			<div class="content-wrapper align-center">
+				<div class="logo-holder">
+					<img src="/assets/img/sbb/kupujemprodajem-logo-color.png">
+				</div>
+				<div class="featured-text narrow-content">
+					Vam poklanja min. 14.490 din<br>
+					uz SBB Duo pakete!*
+				</div>
+				<div class="sub-text">
+					* čak 5 meseci po 1 dinar
+				</div>
+				<div class="scroll-to-form black desktop-only" id="scrollToForm"></div>
+				<div class="featured-boxes narrow-content">
+					<div class="row">
+						<div class="col-1-3">
+							<img src="/assets/img/sbb/duo-gold-box.png" class="pull-right">
 						</div>
-					</div>
-					<div class="col-1-2 col-m-1-1 padding-left">
-						<div class="form-field" action-name="validate" action-value="phoneNumber">
-							<label for="phone-number">Broj telefona</label>
-							<input type="tel" name="phoneNumber" id="phone-number">
+						<div class="col-1-3">
+							<img src="/assets/img/sbb/duo-gold-extra-box.png">
+						</div>
+						<div class="col-1-3">
+							<img src="/assets/img/sbb/duo-gold-premium-box.png" class="pull-left">
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="narrow-content">
-				<h1><span>2</span>Kliknite na dugme ispod i SBB agent će Vas pozvati<br class="desktop-only">
-					da Vam objasni sve detalje ove ponude</h1>
-				<input type="submit" class="action-button" value="Pozovi me!">
-			</section>
-		</form>
-		<section class="footer align-center">
-			<p><b>Poziv možete očekivati u roku od 15 minuta.</b></p>
-			<p>Za zahteve kreirane u periodu od ponoći do 09h ujutru, poziv možete očekivati istog dana u terminu od 10:00-12:00h.</p>
-			<p>Za zahteve kreirane u periodu od 20:30h do ponoći, poziv možete očekivati sutra u terminu od 10:00-12:00h.</p>
-			<p>Za zahteve kreirane nedeljom, poziv možete očekivati u ponedeljak u terminu od 10:00-12:00h.</p>
-		</section>
-	</div>
-	<div class="content-wrapper" id="postSubmitSection" style="display: none;">
-		<div class="post-submit-message-holder">
-			Hvala! SBB agent će Vas pozvati u roku od 15 minuta.
+			</div>
 		</div>
-		<div class="post-submit-info-holder">
-			Br. vaše prijave je: <span class="inquiry-no">XXXX</span><br>
-			Sačuvajte ovaj broj u slučaju da ne dobijete poziv od SBB agenta.
+		<div class="content-wrapper" id="formSection">
+			<form id="sbbForm" action="" method="post">
+				<section class="narrow-content">
+					<h1><span>1</span>Unesite ime i broj telefona:</h1>
+					<div class="row">
+						<div class="col-1-2 col-m-1-1 padding-right">
+							<div class="form-field" action-name="validate" action-value="name">
+								<label for="name">Ime</label>
+								<input type="text" name="name" id="name">
+							</div>
+						</div>
+						<div class="col-1-2 col-m-1-1 padding-left">
+							<div class="form-field" action-name="validate" action-value="phoneNumber">
+								<label for="phone-number">Broj telefona</label>
+								<input type="tel" name="phoneNumber" id="phone-number">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="narrow-content">
+					<h1><span>2</span>Kliknite na dugme ispod i SBB agent će Vas pozvati<br class="desktop-only">
+						da Vam objasni sve detalje ove ponude</h1>
+					<input type="submit" class="action-button" value="Pozovi me!">
+				</section>
+			</form>
+			<section class="footer align-center">
+				<p><b>Poziv možete očekivati u roku od 15 minuta.</b></p>
+				<p>Za zahteve kreirane u periodu od ponoći do 09h ujutru, poziv možete očekivati istog dana u terminu od 10:00-12:00h.</p>
+				<p>Za zahteve kreirane u periodu od 20:30h do ponoći, poziv možete očekivati sutra u terminu od 10:00-12:00h.</p>
+				<p>Za zahteve kreirane nedeljom, poziv možete očekivati u ponedeljak u terminu od 10:00-12:00h.</p>
+			</section>
+		</div>
+		<div class="content-wrapper" id="postSubmitSection" style="display: none;">
+			<div class="post-submit-message-holder">
+				Hvala! SBB agent će Vas pozvati u roku od 15 minuta.
+			</div>
+			<div class="post-submit-info-holder">
+				Br. vaše prijave je: <span class="inquiry-no">XXXX</span><br>
+				Sačuvajte ovaj broj u slučaju da ne dobijete poziv od SBB agenta.
+			</div>
 		</div>
 	</div>
-</div>
-<script>
-	var kpSbb = new KPSBB({
-		form: 'sbbForm',
-		formAnchor: 'scrollToForm',
-		formSection: 'formSection',
-		postSubmitSection: 'postSubmitSection'
-	});
-</script>
+	<script src="/js/util/prototype.js"></script>
+	<script src="/js/util/scriptaculous.js"></script>
+	<script src="/js/util/effects.js"></script>
+	<script src="/js/util/builder.js"></script>
+	<script src="/js/util/dragdrop.js"></script>
+	<script src="/js/util/controls.js"></script>
+	<script src="/js/util/slider.js"></script>
+	<script src="/js/util/sound.js"></script>
+	<script src="/js/lib/sbb-class.js"></script>
+	<script>
+		var kpSbb = new KPSBB({
+			form: 'sbbForm',
+			formAnchor: 'scrollToForm',
+			formSection: 'formSection',
+			postSubmitSection: 'postSubmitSection'
+		});
+	</script>
 </body>
 </html>

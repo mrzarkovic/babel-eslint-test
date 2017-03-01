@@ -150,7 +150,7 @@ html {
     margin-bottom: 60px;
 
     &.trio {
-      background: #000 url('/images/sbb/2.0/lp1-hero-image.jpg') center no-repeat;
+      background: #000 url('/assets/img/sbb/lp1-hero-image.jpg') center no-repeat;
 
       .featured-text,
       .sub-text {
@@ -163,7 +163,7 @@ html {
     }
 
     &.duo {
-      background: #fffcf6 url('/images/sbb/2.0/lp2-hero-image-gold-dust.jpg') center bottom no-repeat;
+      background: #fffcf6 url('/assets/img/sbb/lp2-hero-image-gold-dust.jpg') center bottom no-repeat;
 
       .featured-text,
       .sub-text {
@@ -185,7 +185,7 @@ html {
     }
 
     &.sk {
-      background: #fff url('/images/sbb/2.0/lp3-hero-image.jpg') center no-repeat;
+      background: #fff url('/assets/img/sbb/lp3-hero-image.jpg') center no-repeat;
 
       .featured-text,
       .sub-text {
@@ -236,11 +236,11 @@ html {
       height: 90px;
 
       &.black {
-        background: transparent url('/images/sbb/2.0/down-arrow-black.png') center no-repeat;
+        background: transparent url('/assets/img/sbb/down-arrow-black.png') center no-repeat;
       }
 
       &.white {
-        background: transparent url('/images/sbb/2.0/down-arrow-white.png') center no-repeat;
+        background: transparent url('/assets/img/sbb/down-arrow-white.png') center no-repeat;
       }
 
       &:hover {

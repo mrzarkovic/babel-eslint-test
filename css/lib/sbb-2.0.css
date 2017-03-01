@@ -506,14 +506,14 @@ html {
   background-size: cover;
   margin-bottom: 60px; }
   .sbb .hero-image.trio {
-    background: #000 url("/images/sbb/2.0/lp1-hero-image.jpg") center no-repeat; }
+    background: #000 url("/assets/img/sbb/lp1-hero-image.jpg") center no-repeat; }
     .sbb .hero-image.trio .featured-text,
     .sbb .hero-image.trio .sub-text {
       color: #fff; }
     .sbb .hero-image.trio .featured-boxes {
       max-width: 530px; }
   .sbb .hero-image.duo {
-    background: #fffcf6 url("/images/sbb/2.0/lp2-hero-image-gold-dust.jpg") center bottom no-repeat; }
+    background: #fffcf6 url("/assets/img/sbb/lp2-hero-image-gold-dust.jpg") center bottom no-repeat; }
     .sbb .hero-image.duo .featured-text,
     .sbb .hero-image.duo .sub-text {
       color: #000; }
@@ -524,7 +524,7 @@ html {
       .sbb .hero-image.duo .featured-boxes img.pull-right {
         margin-right: -25px; }
   .sbb .hero-image.sk {
-    background: #fff url("/images/sbb/2.0/lp3-hero-image.jpg") center no-repeat; }
+    background: #fff url("/assets/img/sbb/lp3-hero-image.jpg") center no-repeat; }
     .sbb .hero-image.sk .featured-text,
     .sbb .hero-image.sk .sub-text {
       color: #fff; }
@@ -553,9 +553,9 @@ html {
   .sbb .hero-image .scroll-to-form {
     height: 90px; }
     .sbb .hero-image .scroll-to-form.black {
-      background: transparent url("/images/sbb/2.0/down-arrow-black.png") center no-repeat; }
+      background: transparent url("/assets/img/sbb/down-arrow-black.png") center no-repeat; }
     .sbb .hero-image .scroll-to-form.white {
-      background: transparent url("/images/sbb/2.0/down-arrow-white.png") center no-repeat; }
+      background: transparent url("/assets/img/sbb/down-arrow-white.png") center no-repeat; }
     .sbb .hero-image .scroll-to-form:hover {
       cursor: pointer; }
   .sbb .hero-image .featured-boxes {

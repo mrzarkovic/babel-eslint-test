@@ -1,4 +1,4 @@
-var KPSBB = Class.create({
+var KPSBB = Class.create({ // eslint-disable-line no-unused-vars
 	initialize: function(options) {
 		this.options = options || {};
 		this.form = $(this.options['form']);
@@ -20,8 +20,6 @@ var KPSBB = Class.create({
 		this.initObservers();
 	},
 	initObservers: function() {
-		var _this = this;
-
 		if (this.formAnchor) {
 			this.formAnchor.observe('click', function() {
 				Effect.ScrollTo('sbbForm', { duration:'0.4', offset: 0 });

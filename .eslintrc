@@ -1,16 +1,35 @@
 {
   "extends": "eslint:recommended",
   "parserOptions": {
-    "sourceType": "module",
-    "allowImportExportEverywhere": false
+    "sourceType": "script"
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true,
+    "prototypejs": true
   },
   "rules": {
-    "no-console": ["error", { "allow": ["warn", "error"] }],
-    "strict": ["error", "global"],
-	"quotes": ["error", "single"],
-	"no-use-before-define": ["error", { "variables": true, "functions": true, "classes": true }]
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "strict": 0,
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "variables": true,
+        "functions": true,
+        "classes": true
+      }
+    ]
   }
 }
