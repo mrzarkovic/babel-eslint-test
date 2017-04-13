@@ -15,6 +15,6 @@ This will start up a Babel file watcher and ESLint file watcher, who both watch 
 
 To watch for sass files in the `css/src` directory, in a new terminal instance, run:
 
-`$ npm run dev`
+`$ npm run sass`
 
 Happy coding!
